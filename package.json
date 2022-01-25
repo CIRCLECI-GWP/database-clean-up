@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "schedule": "node schedule_permission",
+    "schedule": "node schedule_pipeline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oluyemi",

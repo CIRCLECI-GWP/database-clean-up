@@ -9,7 +9,27 @@ jobs:
       - heroku/install
       - heroku/deploy-via-git:
           force: true
+
+  permission:
+    docker:
+      - image: cimg/node:17.4.0
+    steps:
+      - run:
+          name: Check access and update permissions for users
+          command: "curl https://db-clean-up.herokuapp.com/check-access"
+
+parameters:
+  run-schedule:
+    type: boolean
+    default: false
+
 workflows:
   deploy:
+    when:
+      not: << pipeline.parameters.run-schedule >>
     jobs:
       - build
+  check_permissions:
+    when: << pipeline.parameters.run-schedule >>
+    jobs:
+      - permission
