@@ -14,8 +14,7 @@ async function checkAndChangePermissionAccess() {
       postScheduleEndpoint,
       {
         name: "Check and Change permission",
-        description:
-          "Check and revoke permissions assigned to users every night.",
+        description: "Check and revoke permissions assigned to users.",
         "attribution-actor": "current",
         parameters: {
           branch: "main",
@@ -23,8 +22,8 @@ async function checkAndChangePermissionAccess() {
         },
         timetable: {
           "per-hour": 30,
-          "hours-of-day": [23, 0, 1],
-          "days-of-week": ["TUE", "WED", "THU", "FRI", "SAT"],
+          "hours-of-day": [7, 8, 9],
+          "days-of-week": ["MON", "TUE", "WED", "THU", "FRI", "SAT"],
         },
       },
       {

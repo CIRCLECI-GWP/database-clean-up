@@ -1,5 +1,5 @@
 {
-  "name": "db-cleanup-starter",
+  "name": "db-clean-up",
   "version": "1.0.0",
   "description": "Starter template",
   "main": "server.js",
