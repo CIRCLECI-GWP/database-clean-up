@@ -22,7 +22,7 @@ async function checkAndChangePermissionAccess() {
         },
         timetable: {
           "per-hour": 30,
-          "hours-of-day": [7, 8, 9],
+          "hours-of-day": [11],
           "days-of-week": ["MON", "TUE", "WED", "THU", "FRI", "SAT"],
         },
       },
@@ -35,4 +35,5 @@ async function checkAndChangePermissionAccess() {
     console.log(error.response);
   }
 }
+
 checkAndChangePermissionAccess();
