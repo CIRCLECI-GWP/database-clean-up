@@ -1,5 +1,6 @@
 ## Scheduled database clean up using Scheduled Pipelines
 
+[![CircleCI](https://circleci.com/gh/CIRCLECI-GWP/database-clean-up/tree/main.svg?style=svg)](https://circleci.com/gh/CIRCLECI-GWP/database-clean-up/tree/main)
 ### Getting started
 
 Clone this application on GitHub with:
